@@ -11,6 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
+@app.route('/adr2/0000001')
 @cross_origin()
 def index():
     return render_template('index.html')
